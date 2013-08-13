@@ -114,3 +114,14 @@ div.bot_shadow{
     /* For IE 8*/
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
+
+.signup {
+    padding-top: 30px;
+    height: 50px;
+    width: 500px;
+    font-size: 28px;
+}
+
+.signup-content {
+    text-align: center;
+}
