@@ -21,7 +21,13 @@ tagline: Electric Vehicle Charging Stations
         <img alt='Oregon Wilderness' src='/assets/images/scaled/oregon-wilderness.png' />
     </div>
     <div class="span9">
-        <iframe width="498" height="277" src="//www.youtube.com/embed/nmNz9hb26tE?end=167&rel=0" frameborder="0" allowfullscreen></iframe>
+        <div id="youtube-video" class="hide">
+            <iframe id="mplayer" width="498" height="277" src="//www.youtube.com/embed/nmNz9hb26tE?end=167&rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="cover-image">
+            <img id="youtube-cover" src="http://img.youtube.com/vi/nmNz9hb26tE/0.jpg" style="width: 498px; height: 277px;"/>
+            <a href="#">link to video</a>
+        </div>
     </div>
 </div>
 
@@ -30,3 +36,20 @@ tagline: Electric Vehicle Charging Stations
         <a href="http://signup.evleveliii.com" class="btn btn-success signup" target="_blank">Signup for more Information</a>
     </div>
 </div>
+
+<script type="text/javascript">
+    $('#youtube-cover').on('click', function(){
+        toggleVideo();
+    });
+    $('.cover-image a').on('click', function(){
+        toggleVideo();
+        return false;
+    });
+
+    function toggleVideo() {
+        $('#youtube-cover').parent().hide();
+        $('#youtube-video').show();
+        $("#mplayer").attr('src', $("#mplayer").attr('src') + '&autoplay=1');
+    }
+
+</script>

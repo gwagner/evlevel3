@@ -125,3 +125,26 @@ div.bot_shadow{
 .signup-content {
     text-align: center;
 }
+
+.cover-image {
+    position: relative;
+}
+
+.cover-image img {
+    cursor:pointer;
+}
+
+.cover-image a {
+    cursor:pointer;
+    position: absolute;
+    display: block;
+    background: url(/assets/images/youtube-play.png) no-repeat;
+    background-size: 50%;
+    height: 225px;
+    width: 225px;
+    top: 85px;
+    left: 190px;
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+}
