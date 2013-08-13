@@ -1,0 +1,116 @@
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px; }
+
+.container-narrow > hr {
+  margin: 30px 0; }
+
+.navbar .nav {
+  float: right; }
+
+/* posts index */
+.post > h3.title {
+  position: relative;
+  padding-top: 10px; }
+
+.post > h3.title span.date {
+  position: absolute;
+  right: 0;
+  font-size: 0.9em; }
+
+.post > .more {
+  margin: 10px 0;
+  text-align: left; }
+
+/* post-full*/
+.post-full .date {
+  margin-bottom: 20px;
+  font-weight: bold; }
+
+/* tag_box */
+.tag_box {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; }
+
+.tag_box li {
+  line-height: 28px; }
+
+.tag_box li i {
+  opacity: 0.9; }
+
+.tag_box.inline li {
+  float: left; }
+
+.tag_box a {
+  padding: 3px 6px;
+  margin: 2px;
+  background: #eee;
+  color: #555;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px dashed #cccccc; }
+
+.tag_box a span {
+  vertical-align: super;
+  font-size: 0.8em; }
+
+.tag_box a:hover {
+  background-color: #e5e5e5; }
+
+.tag_box a.active {
+  background: #57A957;
+  border: 1px solid #4c964d;
+  color: #FFF; }
+
+.fluid-row-spacing {
+    margin-bottom: 15px;
+}
+
+body {
+    background: #c4b6ab url('/assets/images/oregon-wilderness-200_60.png') no-repeat center top;
+    background-size: 100%;
+}
+
+h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{color:#C9C9C9;}
+h1,h2,h3,h4,h5,h6,footer{color:#fff;}
+.navbar .nav>li>a {color:#fff;text-shadow: none;}
+.navbar .nav>li>a:focus,.navbar .nav>li>a:hover{color:#C9C9C9;}
+
+.row-fluid {
+    color: white;
+}
+
+div.bot_shadow{
+    height:16px;
+    background: #525252;
+    opacity:0.1;
+    border-radius:100%;
+    margin:32px 0px 15px 0px;
+    top:100px;
+}
+
+.content {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.navbar-inner {
+    background: none;
+    border: none;
+}
+
+.alpha60 {
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
